@@ -1,0 +1,133 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+* {margin: 0; padding: 0;}
+
+.name {
+top: 0;
+background: #8B475D;
+min-height: 55vh;
+padding-top: 45vh;
+color: white;
+}
+#navbar{
+text-align: center;
+position: fixed;
+width: 100%;
+background-color: white;
+}
+#navbar li {
+display: inline-block;
+margin: 30px;
+margin-bottom: 15px;
+margin-top: 25px;
+}
+#navbar a {
+color: white;
+text-decoration: none;
+border-radius: 10px;
+background: #8B6969;
+padding: 3px 15px;
+font-family: 'Charmonman', cursive;
+font-weight: bold;
+}
+#navbar a:hover { background: #CD8C95;}
+#container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+#sobre{
+height: 220px;
+width: 1000px;
+margin-top: 50px;
+border-radius: 5px;
+color: #696969;
+}
+.card {
+padding-top: 60px;
+margin-top: -60px;
+}
+.card .phrase {
+margin-top: 50px;
+color: #696969;
+font-weight: normal;
+font-family: 'Charmonman', cursive;
+}
+.project {
+text-decoration: none;
+color: white;
+display: inline-block;
+overflow: hidden;
+border: 2px solid #4F4F4F;
+height: 220px;
+width: 280px;
+margin: 40px 100px;
+border-radius: 5px;
+padding-top: 10px;
+}
+/*cards*/
+.pri{
+background-color: #009ACD;
+font-family: 'Pacifico', cursive;
+font-weight: bold;
+}
+.se{
+background-color: #8B7D7B;
+color: white;
+font-family: 'Charmonman', cursive;
+font-weight: bold;
+}
+.ter{
+background-color: #8B8B7A;
+color: red;
+font-weight: bold;
+}
+.quar{
+background-color: #FFF68F;
+font-family: 'Indie Flower', cursive;
+color: #EE0000;
+font-weight: bold;
+}
+.project:hover{
+padding: 10px;
+background-color: #8B475D;
+}
+footer {
+color: white;
+line-height: 30px;
+color: white;
+background:#8B6969;
+}
+footer a{
+text-decoration: none;
+color: white;
+}
+.link a{
+display: inline-block;
+color: white;
+text-decoration: none;
+margin-left: 10px;
+}
+.link a:hover{
+font-weight: bold;
+}
+.link{
+background: #8B475D;
+padding: 3px;
+margin-top: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+#navbar ul {
+text-align: center;
+}
+#navbar li {
+margin: 20px;
+}
+.project {
+margin: 40px 0;
+}
+}

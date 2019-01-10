@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{background-color: #009ACD;}
+figure{text-align: center;}
+#title{
+text-align: center;
+font-family: 'Pacifico', cursive;
+color: white;
+}
+#tribute-info{
+text-align: center;
+color: white;
+}
+#img-div{background-color: #009ACD;}
+#time h4{text-align: center;}
+#image{
+max-width: 100%;
+display: block;
+height: auto;
+margin: auto;
+border-color: white;
+border-width: 10px;
+border-style: solid;
+}
+figcaption{color: white;}
+#time{
+line-height: 30px;
+margin-left: auto;
+margin-right: auto;
+width: 500px;
+color: white;
+}
+#timeline_time{
+font-weight: bold;
+color: white;
+}
+#phrase{
+text-align: center;
+color: white;
+}
+#signature{
+text-align: center;
+color: white;
+}
+#tribute-l{
+text-align: center;
+color: white;
+}
+#autor{
+text-align: center;
+color: white;
+}

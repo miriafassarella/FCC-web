@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset"utf-8">
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="title">Formulário de contato</h1>
+<div id="cadre-color">
+  <p id="description">
+    Deixe a sua opinião sobre a nossa empresa:
+  </p>
+  <form id="survey-form">
+    <div class="row-flex">
+      <div class="label-text">
+        <label id="name-label" for="name">* Nome: </label>
+      </div>
+      <div class="input-entre">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Entre com o seu nome" required>
+      </div>
+    </div>
+  </br>
+    <div class="row-flex">
+      <div class="label-text">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="input-entre">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Entre com o seu Email">
+      </div>
+    </div>
+  </br>
+    <div class="row-flex">
+      <div class="label-text">
+        <label id="number-label" for="age">* Idade: </label>
+      </div>
+      <div class="input-entre">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Entre com a sua idade">
+      </div>
+    </div>
+    <br>
+    <div class="row-flex">
+     <div class="label-article">
+       <label for="currentPos">Quantas horas por dia você gasta trabalhando com nossos produtos?</label>
+     </div>
+     <div class="input-select">
+       <select id="dropdown" name="currentPos" class="dropdown">
+     <option disabled value>Select an option</option>
+     <option  value="student">3 horas</option>
+     <option value="job">5 horas</option>
+     <option value="learner">8 horas</option>
+     <option value="preferNo">12 horas</option>
+     <option value="other">Outro</option>
+   </select>
+     </div>
+   </div>
+   <br>
+   <div class="row-flex">
+         <div class="label-article">
+           <label for="most-like">O que você mais gosta na nossa empresa: </label>
+         </div>
+         <div class="input-select">
+           <select id="most-like" name="mostLike" class="dropdown">
+         <option disabled selected value>Select an option</option>
+         <option value="challenges">Dinamismo</option>
+         <option value="projects">Relacionamento</option>
+         <option value="community">Atendimento</option>
+         <option value="openSource">Agilidade nos processos</option>
+       </select>
+         </div>
+       </div>
+
+       <div class="row-flex">
+     <div class="label-text">
+       <label for="userRating">*  Qual a probabilidade de você recomendar a nossa empresa a um amigo?</label>
+     </div>
+     <div class="input-larg">
+       <ul style="list-style: none;">
+         <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings" >Recomendo</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings" >Talvez</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >Não recomendo</label></li>
+       </ul>
+     </div>
+   </div>
+
+   <div class="row-flex">
+      <div class="label-text">
+        <label for="preferences">Coisas que devem ser melhoradas imediatamente
+(Marque todas que se aplicam): </label>
+      </div>
+      <div class="input-larg">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Atendimento</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Agilidade</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Qualidade Produtos</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Negociação</label></li>
+
+      </div>
+    </div>
+<br>
+    <div class="row-flex">
+      <div class="label-text">
+        <label for="comments">Comentários ou sugestões?</label>
+      </div>
+      <div class="caixa">
+        <textarea id="comments" name="comment" placeholder="Entre com um comentário aqui..."></textarea>
+      </div>
+    </div>
+    <br>
+    <button id="submit" type="submit"><strong>Enviar</strong></button>
+  </form>
+</div>
+<br>
+
+<div id="footer"><strong>By Miriã Fassarella</strong></div>
+</body>
+</html>

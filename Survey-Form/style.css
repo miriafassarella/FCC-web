@@ -1,0 +1,79 @@
+body{
+text-align: center;
+background-color: #BCD2EE;
+font-family: 'Raleway', sans-serif;
+color: white;
+}
+#title{font-family: 'Charmonman', cursive;}
+#cadre-color{
+width: 900px;
+max-width: 100%;
+background-color: #8B7D7B;
+border-radius: 10px;
+padding: 20px 0px 20px 0px;
+display: block;
+margin: auto;
+padding-right: 10px;
+}
+.row-flex{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.input-field{
+width: 300px;
+height: 30px;
+text-align: left;
+border-radius: 5px;
+border-color: white;
+}
+.label-text{
+width: 300px;
+height: 30px;
+text-align: right;
+margin-right: 10px;
+}
+#dropdown{
+width: 300px;
+height: 30px;
+text-align: left;
+border-radius: 5px;
+}
+#most-like{
+width: 300px;
+height: 30px;
+text-align: left;
+border-radius: 5px;
+}
+.label-article{
+width: 300px;
+height: 30px;
+text-align: right;
+margin-right: 10px;
+}
+.input-larg{
+width: 300px;
+height: 100px;
+text-align: left;
+}
+#submit{
+width: 100px;
+height: 30px;
+border-radius: 4px;
+background-color: #BCD2EE;
+border-color: #BCD2EE;
+font-family: 'Raleway', sans-serif;
+color: white;
+}
+#comments{
+height: 70px;
+width: 300px;
+border-radius: 4px;
+}
+
+@media screen and (max-width: 600px){
+#dropdown{width: 100px;}
+#most-like{width: 100px;}
+.caixa{width: 200px;}
+#comments{width: 150px;}
+}

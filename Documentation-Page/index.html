@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset"utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Page Title</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden">
+<nav id="navbar">
+<header>CSS Tutorial</header>
+<ul>
+<a class="nav-link" href="#Introdução"><li>Introdução</li></a>
+<a class="nav-link" href="#Sintaxe"><li>Sintaxe</li></a>
+<a class="nav-link" href="#Background_Color"><li>Background Color</li></a>
+<a class="nav-link" href="#CSS_Borders"><li>CSS Borders</li></a>
+<a class="nav-link" href="#CSS_Margins"><li>CSS Margins</li></a>
+<a class="nav-link" href="#CSS_Padding"><li>CSS Padding</li></a>
+<a class="nav-link" href="#CSS_Height_e_Width"><li>CSS Height e Width</li></a>
+<a class="nav-link" href="#CSS_Box_Model"><li>CSS Box Model</li></a>
+<a class="nav-link" href="#CSS_Outline"><li>CSS Outline</li></a>
+<a class="nav-link" href="#CSS_Text"><li>CSS Text</li></a>
+<a class="nav-link" href="#CSS_Icons"><li>CSS Icons</li></a>
+<a class="nav-link" href="#CSS_Links"><li>CSS Links</li></a>
+<a class="nav-link" href="#CSS_Lists"><li>CSS Lists</li></a>
+<a class="nav-link" href="#CSS_Opacity"><li>CSS Opacity</li></a>
+<a class="nav-link" href="#Float_e_Clear"><li>Float e Clear</li></a>
+<a class="nav-link" href="#CSS_Tables"><li>CSS Tables</li></a>
+<a class="nav-link" href="#CSS_Overflow"><li>CSS Overflow</li></a>
+</ul>
+</nav>
+
+<main id="main-doc">
+<section class="main-section" id="Introdução">
+<header>Introdução</header>
+<article>
+<p>Quando tags como font e atributos de cores foram adicionados à especificação do HTML 3.2,
+começou um pesadelo para os desenvolvedores da web. O desenvolvimento de grandes sites, onde
+fontes e informações de cores foram adicionadas a cada página, tornou-se um processo longo e caro.</p>
+<p>Para resolver este problema, o World Wide Web Consortium (W3C) criou CSS. CSS removeu a formatação de estilo da página HTML!</p>
+<li>CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outras mídias.</li>
+<li>CSS economiza muito trabalho . Pode controlar o layout de várias páginas da web de uma só vez.</li>
+</article>
+</section>
+<section class="main-section" id="Sintaxe">
+<header>Sintaxe</header>
+<article>
+<p>Um conjunto de regras CSS consiste em um seletor e um bloco de declaração:</p>
+<li>O seletor aponta para o elemento HTML que você deseja estilizar.</li>
+<li>O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.</li>
+<li>SUma declaração CSS sempre termina com um ponto-e-vírgula e os blocos de declaração são cercados por chaves.</li>
+</article>
+</section>
+<section class="main-section" id="Background_Color">
+<header>Background Color</header>
+<article>
+<p>A background-colorpropriedade especifica a cor de fundo de um elemento. A cor de fundo de
+uma página é configurada assim:</p>
+<code>body {
+background-color: lightblue;
+}</code>
+<p>A background-image propriedade especifica uma imagem para usar como plano de fundo de um elemento.
+Por padrão, a imagem é repetida para cobrir todo o elemento. A imagem de fundo de uma página pode ser
+configurada assim:</p>
+<code>body {
+background-image: url("paper.gif");
+}</code>
+<p>Por padrão, a background-imagepropriedade repete uma imagem na horizontal e na vertical.
+Algumas imagens devem ser repetidas apenas horizontalmente ou verticalmente, ou parecerão estranhas, assim:</p>
+<code>body {
+background-image: url("gradient_bg.png");
+}</code>
+</article>
+</section>
+<section class="main-section" id="CSS_Borders">
+<header>CSS Borders</header>
+<article>
+<p>A border-stylepropriedade especifica o tipo de borda a ser exibido.Os seguintes valores são permitidos:</p>
+<li>dotted -Define uma borda pontilhada</li>
+<li>dashed - Define uma borda tracejada</li>
+<li>solid - Define uma borda sólida</li>
+<li>double - Define uma fronteira dupla</li>
+<li>groove- Define uma borda com sulcos 3D. O efeito depende do valor da cor da borda</li>
+<li>ridge- Define uma borda 3D sulcada. O efeito depende do valor da cor da borda</li>
+<li>inset- Define uma borda inserida em 3D. O efeito depende do valor da cor da borda</li>
+<li>outset- Define uma borda de partida 3D. O efeito depende do valor da cor da borda</li>
+<li>none - não define fronteiras</li>
+<li>hidden - Define uma borda oculta</li>
+<p>A border-widthpropriedade especifica a largura das quatro bordas.
+A largura pode ser definida como um tamanho específico (em px, pt, cm, em, etc) ou usando
+um dos três valores predefinidos: thin, medium ou thick.
+A border-widthpropriedade pode ter de um a quatro valores (para a borda superior, borda direita, borda
+inferior e borda esquerda).</p>
+<code>p.one {
+border-style: solid;
+border-width: 5px;
+}
+
+p.two {
+border-style: solid;
+border-width: medium;
+}
+
+p.three {
+border-style: solid;
+border-width: 2px 10px 4px 20px;
+}</code>
+</article>
+</section>
+<section class="main-section" id="CSS_Margins">
+<header>CSS Margins</header>
+<article>
+<p>
+As marginpropriedades CSS são usadas para criar espaço em torno de elementos, fora de qualquer borda definida.
+Com CSS, você tem controle total sobre as margens. Existem propriedades para definir a margem para cada lado de
+um elemento (superior, direita, inferior e esquerda).
+</p>
+<p>O exemplo a seguir define margens diferentes para todos os quatro lados de um elemento:</p>
+<code>p {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80px;
+}</code>
+<p>CSS tem propriedades para especificar a margem para cada lado de um elemento:</p>
+<li>margin-top</li>
+<li>margin-right</li>
+<li>margin-bottom</li>
+<li>margin-left</li>
+<p>Você pode definir a propriedade de margem autopara centralizar horizontalmente o elemento dentro de seu contêiner.
+O elemento ocupará a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita:</p>
+<code>div {
+width: 300px;
+margin: auto;
+border: 1px solid red;
+}</code>
+</article>
+</section>
+<section class="main-section" id="CSS_Padding">
+<header>CSS Padding</header>
+<article>
+<p>As padding propriedades CSS são usadas para gerar espaço em torno do conteúdo de um elemento,
+dentro de qualquer borda definida.
+Com CSS, você tem controle total sobre o preenchimento. Existem propriedades para definir o preenchimento
+de cada lado de um elemento (superior, direita, inferior e esquerda).</p>
+<p>Exemplo:</p>
+<code>div {
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+}</code>
+<p>A widthpropriedade CSS especifica a largura da área de conteúdo do elemento.
+A área de conteúdo é a parte dentro do preenchimento, borda e margem de um elemento ( o modelo de caixa ).
+Portanto, se um elemento tiver uma largura especificada, o preenchimento adicionado a esse elemento será adicionado à largura total do elemento.
+Isso geralmente é um resultado indesejável.</p>
+<p>Exemplo:</p>
+<code>div {
+width: 300px;
+padding: 25px;
+}</code>
+</article>
+</section>
+<section class="main-section" id="CSS_Height_e_Width">
+<header>CSS Height e Width</header>
+<article>
+<p> As propriedades heighte widthsão usadas para definir a altura e a largura de um elemento.
+O heighte widthpode ser definido como automático (isso é o padrão. Significa que o navegador
+calcula a altura e a largura) ou pode ser especificado em valores de comprimento , como px,
+cm, etc., ou em porcentagem (%) do bloco de contenção.</p>
+<p>Exemplo:</p>
+<code>div {
+height: 200px;
+width: 50%;
+background-color: powderblue;
+}</code>
+
+<code>div {
+height: 100px;
+width: 500px;
+background-color: powderblue;
+}</code>
+<p>As propriedades heighte widthnão incluem preenchimento, bordas ou margens; eles definem a altura
+/ largura da área dentro do preenchimento, borda e margem do elemento!</p>
+</article>
+</section>
+<section class="main-section" id="CSS_Box_Model">
+<header>CSS Box Model</header>
+<article>
+<p>Todos os elementos HTML podem ser considerados como caixas. Em CSS, o termo "modelo de caixa" é usado quando
+se fala em design e layout.
+O modelo de caixa CSS é essencialmente uma caixa que envolve todos os elementos HTML. Consiste em: margens,
+bordas, preenchimento e o conteúdo real.</p>
+<p>O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre os elementos.</p>
+<p>Exemplo:</p>
+<code>div {
+width: 300px;
+border: 25px solid green;
+padding: 25px;
+margin: 25px;
+}</code>
+<p>Para definir a largura e a altura de um elemento corretamente em todos os navegadores, você precisa saber
+como o modelo de caixa funciona.</p>
+<code>div {
+width: 320px;
+padding: 10px;
+border: 5px solid gray;
+margin: 0;
+}</code>
+<p>A largura total de um elemento deve ser calculada da seguinte forma:</p>
+<p>Largura total do elemento = largura + preenchimento à esquerda + preenchimento à direita + borda
+esquerda + borda direita + margem esquerda + margem direita</p>
+<p>A altura total de um elemento deve ser calculada da seguinte forma:
+Altura total do elemento = altura + preenchimento superior + preenchimento inferior + borda superior
++ borda inferior + margem superior + margem inferior</p>
+</article>
+</section>
+<section class="main-section" id="CSS_Outline">
+<header>CSS Outline</header>
+<article>
+<p>A outline-stylepropriedade especifica o estilo do contorno e pode ter um dos seguintes valores:</p>
+<li>dotted - Define um contorno pontilhado</li>
+<li>dashed - Define um contorno tracejado</li>
+<li>solid - Define um contorno sólido</li>
+<li>double - Define um contorno duplo</li>
+<li>groove - Define um contorno sulcado em 3D</li>
+<li>ridge - Define um contorno 3D</li>
+<li>inset - Define um contorno em 3D</li>
+<li>outset - Define um esboço inicial em 3D</li>
+<li>none - não define nenhum esboço</li>
+<li>hidden - Define um contorno oculto</li>
+<p>Nenhuma das outras propriedades de contorno terá qualquer efeito, a menos
+que a outline-stylepropriedade esteja definida!</p>
+<p>A outline-colorpropriedade é usada para definir a cor do contorno:</p>
+<code>p.ex1 {
+border: 1px solid black;
+outline-style: solid;
+outline-color: red;
+}
+
+p.ex2 {
+border: 1px solid black;
+outline-style: double;
+outline-color: green;
+}
+
+p.ex3 {
+border: 1px solid black;
+outline-style: outset;
+outline-color: yellow;
+}
+</code>
+</article>
+</section>
+<section class="main-section" id="CSS_Text">
+<header>CSS Text</header>
+<article>
+<p>A colorpropriedade é usada para definir a cor do texto. </p>
+<p>A cor de texto padrão de uma página é definida no seletor de corpo.</p>
+<code>body {
+color: blue;
+}
+
+h1 {
+color: green;
+}</code>
+<p>A text-alignpropriedade é usada para definir o alinhamento horizontal de um texto.
+Um texto pode ser alinhado à esquerda ou à direita, centrado ou justificado.
+O exemplo a seguir mostra alinhado ao centro e texto alinhado à esquerda e à direita
+(o alinhamento à esquerda é padrão se a direção do texto for da esquerda para a direita
+e o alinhamento à direita for padrão se a direção do texto for da direita para a esquerda):</p>
+<code>h1 {
+text-align: center;
+}
+
+h2 {
+text-align: left;
+}
+
+h3 {
+text-align: right;
+}</code>
+</article>
+</section>
+<section class="main-section" id="CSS_Icons">
+<header>CSS Icons</header>
+<article>
+<p>A maneira mais simples de adicionar um ícone à sua página HTML é com uma biblioteca de ícones, como o Font Awesome.</p>
+<p>Adicione o nome da classe de ícone especificada a qualquer elemento HTML.</p>
+</article>
+</section>
+<section class="main-section" id="CSS_Links">
+<header>CSS Links</header>
+<article>
+Os links podem ter um estilo diferente, dependendo do estado em que estão.
+<p>Os quatro estados de links são:</p>
+<li>a:link - um link normal não visitado</li>
+<li>a:visited - um link que o usuário visitou</li>
+<li>a:hover - um link quando o usuário passar por cima dele</li>
+<li>a:active - um link no momento em que é clicado</li>
+<p>Exemplo:</p>
+<code>/* unvisited link */
+a:link {
+color: red;
+}
+
+/* visited link */
+a:visited {
+color: green;
+}
+
+/* mouse over link */
+a:hover {
+color: hotpink;
+}
+
+/* selected link */
+a:active {
+color: blue;
+}</code>
+<p>A text-decorationpropriedade é usada principalmente para remover os sublinhados dos links:</p>
+<p>Exemplo:</p>
+<code>a:link {
+text-decoration: none;
+}
+
+a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+a:active {
+text-decoration: underline;
+}</code>
+</article>
+</section>
+<section class="main-section" id="CSS_Lists">
+<header>CSS Lists</header>
+<article>
+<p>A list-style-typepropriedade especifica o tipo de marcador de item da lista.
+O exemplo a seguir mostra alguns dos marcadores de itens de lista disponíveis:</p>
+
+<code>l.a {
+list-style-type: circle;
+}
+
+
+ul.b {
+list-style-type: square;
+}
+
+
+ol.c {
+list-style-type: upper-roman;
+}
+
+ol.d {
+list-style-type: lower-alpha;
+}</code>
+
+</article>
+</section>
+<section class="main-section" id="CSS_Opacity">
+<header>CSS Opacity </header>
+<article>
+<p>A opacitypropriedade pode ter um valor de 0,0 a 1,0. Quanto menor o valor, mais transparente:</p>
+<p>Ezemplo:</p>
+<code>img {
+opacity: 0.5;
+filter: alpha(opacity=50); /* For IE8 and earlier */
+}</code>
+<p>A opacity propriedade é frequentemente usada junto com o :hover seletor para alterar a opacidade
+ao passar o mouse:</p>
+<code>img {
+opacity: 0.5;
+filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+opacity: 1.0;
+filter: alpha(opacity=100); /* For IE8 and earlier */
+}</code>
+</article>
+</section>
+
+<section class="main-section" id="Float_e_Clear">
+<header>Float e Clear</header>
+<article>
+<p>A floatpropriedade é usada para posicionar e formatar conteúdo, por exemplo, deixar uma imagem
+flutuar para o texto em um contêiner.</p>
+<p>A floatpropriedade pode ter um dos seguintes valores:</p>
+<li>left - O elemento flutua à esquerda do contêiner</li>
+<li>right- O elemento flutua à direita do seu contêiner</li>
+<li>none - O elemento não flutua (será exibido exatamente onde ocorre no texto). Este é o padrão</li>
+<li>herit - O elemento herda o valor float de seu pai</li>
+<p>Em seu uso mais simples, a floatpropriedade pode ser usada para envolver o texto em torno das imagens.</p>
+<p>O exemplo a seguir especifica que uma imagem deve flutuar para a direita em um texto:</p>
+<code>img {
+float: right;
+}</code>
+
+</article>
+</section>
+<section class="main-section" id="CSS_Tables">
+<header>CSS Tables</header>
+<article>
+<p>A aparência de uma tabela HTML pode ser muito melhorada com CSS.</p>
+<p>Para especificar bordas de tabela em CSS, use a borderpropriedade.
+O exemplo abaixo especifica uma borda preta.
+<code>table, th, td {
+border: 1px solid black;
+}</code>
+<p>A border-collapsepropriedade define se as bordas da tabela devem ser recolhidas em uma única borda:</p>
+<code>table {
+border-collapse: collapse;
+}
+
+table, th, td {
+border: 1px solid black;
+}</code>
+
+
+     <p>O exemplo a seguir alinha o texto à esquerda:</p>
+    <code>th {
+      text-align: left;
+    }</code>
+  </article>
+</section>
+<section class="main-section" id="CSS_Overflow">
+  <header>CSS Overflow</header>
+  <article>
+    <p>A overflowpropriedade especifica se é necessário recortar o conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento é grande demais para caber em uma área especificada.
+
+      A overflowpropriedade possui os seguintes valores:</p>
+      <li>visible- Padrão. O estouro não é cortado. Ele renderiza fora da caixa do elemento</li>
+      <li>hidden - O estouro é cortado e o restante do conteúdo ficará invisível</li>
+      <li>scroll - O estouro é recortado, mas uma barra de rolagem é adicionada para ver o restante do conteúdo</li>
+      <li>auto - Se o estouro for cortado, uma barra de rolagem deve ser adicionada para ver o restante do conteúdo</li>
+      <p>Nota: A overflowpropriedade só funciona para elementos de bloco com uma altura especificada.
+        Nota: No OS X Lion (no Mac), as barras de rolagem ficam ocultas por padrão e são mostradas apenas quando são usadas
+        (embora "estouro: rolagem" esteja definido).</p>
+        <p>Por padrão, o estouro é visible, o que significa que não é cortado e é renderizado fora da caixa do elemento:</p>
+        <p>Você pode usar a propriedade de overflow quando quiser ter um melhor controle do layout.
+          A propriedade de overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.
+        </p>
+        <code>div {
+          width: 200px;
+          height: 50px;
+          background-color: #eee;
+          overflow: visible;
+        }</code>
+      </article>
+    </section>
+
+  </main>
+</body>
+</html>
